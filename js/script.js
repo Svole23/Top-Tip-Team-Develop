@@ -114,4 +114,17 @@ $(document).ready(function () {
   $(".header-link-right-container-logout").click(function(){
     window.location.href='index.html';
   });
+
+  $(".match-button").click(function(){
+    window.location.href='match.html';
+  });
+
+  $("#Bundes").click(function(){
+    window.location.href='match-list.html';
+  });
+
+  $("#Premier").click(function(){
+    window.location.href='match-list.html';
+  });
+
 });
