@@ -333,6 +333,25 @@
 <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 <!-- -->
 <script>
+  var top1 = $('.section-2').offset().top;
+  var top2 = $('.section-3').offset().top;
+  var top3 = $('.section-4').offset().top;
+  var top4 = $('.section-5').offset().top;
+  $(window).scroll(function() {
+    var scrollPos = $(document).scrollTop();
+    if (scrollPos >= top1 && scrollPos < top2) {
+      $('.header-link-right-container').css('background-color', '#00ff85');
+    } else if (scrollPos >= top2 && scrollPos < top3) {
+      $('.header-link-right-container').css('background-color', '#38003c');
+    } else if (scrollPos >= top3 && scrollPos < top4) {
+      $('.header-link-right-container').css('background-color', '#00ff85');
+    } else if (scrollPos >= top4) {
+      $('.header-link-right-container').css('background-color', '#38003c');
+    } else if (scrollPos === 0) {
+      $('.header-link-right-container').css('background-color', '#38003c');
+    }
+
+  });
   var pageAnimation = new TimelineMax();
   var boxAnimation = new TimelineMax();
   $(window).on('load', function () {

@@ -36,6 +36,7 @@ $(document).ready(function () {
     window.location.href='index.html';
   });
 
+
   $(".sc-button").click(function(){
     $(".sc-form-container").addClass("show")
   });
