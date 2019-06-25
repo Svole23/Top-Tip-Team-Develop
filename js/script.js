@@ -83,6 +83,13 @@ $(document).ready(function () {
     $(".header-log-in-container").addClass("show");
   });
 
+  $("#section-1-sign-up").click(function(){
+    $(".header-link-right-container").addClass("expand-right");
+    $(".header-link-right-container .header-link").addClass("hide");
+    $(".header-sign-up-container").addClass("show");
+    $(".header-log-in-container").addClass("show");
+  });
+
   var animation2 = new TimelineMax();
   var animation3 = new TimelineMax();
 
@@ -94,7 +101,6 @@ $(document).ready(function () {
   // animate to second panel
       .to("#horizontal-sections-container", 1,   {x: "-50vw"})
       .to("#horizontal-sections-container", 1,   {x: "-100vw"})
-      .to("#horizontal-sections-container", 1,   {x: "-150vw"})
 
   // create scene to pin and link animation
   new ScrollMagic.Scene({
