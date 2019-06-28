@@ -328,6 +328,27 @@
       pageAnimation.from(".s1-sub-title", 1,{opacity: 0}, 0);
       pageAnimation.from(".arrows-container", 1,{opacity: 0}, 0);
     }, 1000);
+    let top1 = $('.section-1').offset().top;
+    let top2 = $('.section-2').offset().top;
+    let top3 = $('.section-3').offset().top;
+    let top4 = $('.section-4').offset().top;
+    let top5 = $('.section-5').offset().top;
+
+    $(document).scroll(function() {
+      let scrollPos = $(document).scrollTop();
+      if (scrollPos >= top2 && scrollPos < top3) {
+        $('.header-link-right-container').addClass('green');
+        $('.header-link-right-container').removeClass('purple');
+
+      } else if (scrollPos >= top3 && scrollPos < top4) {
+        $('.header-link-right-container').removeClass('green');
+        $('.header-link-right-container').addClass('purple');
+      }
+      else {
+        $('.header-link-right-container').removeClass('green');
+        $('.header-link-right-container').removeClass('purple');
+      }
+    });
   });
 </script>
 </body>
