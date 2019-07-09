@@ -27,31 +27,26 @@
         <div class="header-section">
           <div class="hs-header">
             <button id="Premier" class="hs-header-button">Premier League Matches</button>
-            <h2>Match List</h2>
             <button id="Bundes" class="hs-header-button">Bundesliga</button>
           </div>
         </div>
       </div>
-      <div class="header-link-right-container">
-        <div class="header-link"></div>
-        <div class="header-sign-up-container">
-          <div class="sign-up-container">
-            <span class="sign-up-title">Account</span>
-            <form class="sign-up-form">
-              <p class="change-title">Username: tester.user@usertester.com</p>
-              <p class="change-title">Change password:</p>
-              <input class="sign-up-input" type="text" placeholder="Old Password">
-              <input class="sign-up-input" type="text" placeholder="New Password">
-              <input class="sign-up-input" type="email" placeholder="Repeat New Password">
-            </form>
-            <button id="signup-button" class="submit-button">CHANGE</button>
-          </div>
+      <div class="header-link-right-container user-home-header-link">
+        <div class="user-avatar-container">
+          <img class="user-avatar" src="../images/icons/user-avatar.png">
         </div>
         <div class="header-log-in-container">
           <div class="log-in-container">
-            <p class="newsletter-title">Sign up for the newsletter:</p>
-            <button class="submit-button newsletter-button">SIGN UP</button>
-            <button id="login-button" class="submit-button logout-button">LOG OUT</button>
+            <div class="email-div">
+              <p class="change-email-title">user@user.com</p>
+            </div>
+            <div class="home-button-header">
+              <a class="home-link" href="user-home.html">Home</a>
+            </div>
+            <div class="feedback-button-header">
+              <button class="submit-button">Send Feedback</button>
+            </div>
+            <button id="logout-button" class="submit-button logout-button">LOG OUT</button>
             <div class="log-in-close"></div>
           </div>
         </div>
@@ -73,7 +68,7 @@
     </div>
   </section>
   <section class="section-2">
-    <div class="row no-gutters">
+    <div class="row no-gutters score-row">
       <div class="col-6">
         <div class="team01-name-container">
           <h2 class="team01-name">England</h2>
