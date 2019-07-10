@@ -170,6 +170,7 @@ $(document).ready(function () {
           $(this).find('.hs-title-container:after').css('background','#38003c');
           $(this).find('.hs-text-under').css('background','white');
           $(this).find('.hs-title').css('color', 'white');
+          $(this).find('.hs-text').css('color', 'white');
         }
       })
     }
