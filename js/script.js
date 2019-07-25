@@ -243,14 +243,4 @@ $(document).ready(function () {
       }
     });
   }
-
-  $(window).scroll(function() {
-    let width = $(window).width();
-    if ($(this).scrollTop() > 5 && width < 1200) {
-      $('.match-list-title').css('visibility','hidden')
-    }
-    else if($(this).scrollTop() < 5 && width < 1200) {
-      $('.match-list-title').css('visibility','visible')
-    }
-  });
 });

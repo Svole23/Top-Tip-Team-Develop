@@ -68,9 +68,9 @@
         </div>
       </div>
       <div class="center-match-container">
-        <h2>England</h2>
-        <h2>-</h2>
-        <h2>Norway</h2>
+        <h2 class="team01-name-list">England</h2>
+        <h2 class="divider-list">-</h2>
+        <h2 class="team02-name-list">Norway</h2>
       </div>
       <div class="right-match-container">
         <div class="odds-container">
@@ -97,9 +97,9 @@
         </div>
       </div>
       <div class="center-match-container">
-        <h2>England</h2>
-        <h2>-</h2>
-        <h2>Norway</h2>
+        <h2 class="team01-name-list">England</h2>
+        <h2 class="divider-list">-</h2>
+        <h2 class="team02-name-list">Norway</h2>
       </div>
       <div class="right-match-container">
         <div class="odds-container">
@@ -126,9 +126,9 @@
         </div>
       </div>
       <div class="center-match-container">
-        <h2>England</h2>
-        <h2>-</h2>
-        <h2>Norway</h2>
+        <h2 class="team01-name-list">England</h2>
+        <h2 class="divider-list">-</h2>
+        <h2 class="team02-name-list">Norway</h2>
       </div>
       <div class="right-match-container">
         <div class="odds-container">
@@ -155,9 +155,9 @@
         </div>
       </div>
       <div class="center-match-container">
-        <h2>England</h2>
-        <h2>-</h2>
-        <h2>Norway</h2>
+        <h2 class="team01-name-list">England</h2>
+        <h2 class="divider-list">-</h2>
+        <h2 class="team02-name-list">Norway</h2>
       </div>
       <div class="right-match-container">
         <div class="odds-container">
@@ -184,9 +184,9 @@
         </div>
       </div>
       <div class="center-match-container">
-        <h2>England</h2>
-        <h2>-</h2>
-        <h2>Norway</h2>
+        <h2 class="team01-name-list">England</h2>
+        <h2 class="divider-list">-</h2>
+        <h2 class="team02-name-list">Norway</h2>
       </div>
       <div class="right-match-container">
         <div class="odds-container">
@@ -213,9 +213,9 @@
         </div>
       </div>
       <div class="center-match-container">
-        <h2>England</h2>
-        <h2>-</h2>
-        <h2>Norway</h2>
+        <h2 class="team01-name-list">England</h2>
+        <h2 class="divider-list">-</h2>
+        <h2 class="team02-name-list">Norway</h2>
       </div>
       <div class="right-match-container">
         <div class="odds-container">
@@ -242,9 +242,9 @@
         </div>
       </div>
       <div class="center-match-container">
-        <h2>England</h2>
-        <h2>-</h2>
-        <h2>Norway</h2>
+        <h2 class="team01-name-list">England</h2>
+        <h2 class="divider-list">-</h2>
+        <h2 class="team02-name-list">Norway</h2>
       </div>
       <div class="right-match-container">
         <div class="odds-container">
@@ -271,9 +271,9 @@
         </div>
       </div>
       <div class="center-match-container">
-        <h2>England</h2>
-        <h2>-</h2>
-        <h2>Norway</h2>
+        <h2 class="team01-name-list">England</h2>
+        <h2 class="divider-list">-</h2>
+        <h2 class="team02-name-list">Norway</h2>
       </div>
       <div class="right-match-container">
         <div class="odds-container">
@@ -300,9 +300,9 @@
         </div>
       </div>
       <div class="center-match-container">
-        <h2>England</h2>
-        <h2>-</h2>
-        <h2>Norway</h2>
+        <h2 class="team01-name-list">England</h2>
+        <h2 class="divider-list">-</h2>
+        <h2 class="team02-name-list">Norway</h2>
       </div>
       <div class="right-match-container">
         <div class="odds-container">
@@ -499,6 +499,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
 <!-- -->
 <script>
+  $(window).scroll(function() {
+    let width = $(window).width();
+    if ($(this).scrollTop() > 5 && width < 1200) {
+      $('.match-list-title').css('visibility','hidden')
+    }
+    else if($(this).scrollTop() < 5 && width < 1200) {
+      $('.match-list-title').css('visibility','visible')
+    }
+  });
   var pageAnimation = new TimelineMax();
   var boxAnimation = new TimelineMax();
   $(window).on('load', function () {
