@@ -40,8 +40,8 @@
             <form class="log-in-form">
               <input class="log-in-input" type="text" placeholder="Email">
               <input class="log-in-input" type="password" placeholder="Password">
-              <input class="log-in-input" type="password" placeholder="Repeat Password">
             </form>
+              <button class="submit-button" id="forgot-password-button">Forgot Password?</button>
             <button id="login-button" class="submit-button">LOGIN / REGISTER</button>
             <div class="log-in-close"></div>
           </div>
@@ -70,7 +70,17 @@
         </div>
     </div>
     <div class="section-video">
-      <video id="video" controls>
+      <div class="video-button-container">
+        <div class="video-button">
+          <div class="video-button-icon-play">
+            <div class="icon-play"></div>
+          </div>
+          <div class="video-button-icon-pause">
+            <div class="icon-pause"></div>
+          </div>
+        </div>
+      </div>
+      <video id="video">
         <source src="../images/1BTLT.mp4" type="video/mp4">
       </video>
     </div>
@@ -292,6 +302,11 @@
       <button class="gdpr-button-close">CLOSE</button>
     </div>
   </div>
+    <div class="forgot-password-popup">
+        <div class="forgot-password-popup-inner">
+            <span>Verification has been sent to your email!</span>
+        </div>
+    </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script crossorigin="anonymous"

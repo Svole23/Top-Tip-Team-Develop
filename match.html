@@ -45,7 +45,7 @@
             </div>
             <div class="feedback-button-header">
               <form class="user-menu-form">
-                <textarea class="feedback-input"></textarea>
+                <textarea class="feedback-input" placeholder="Enter your feedback here..."></textarea>
               </form>
               <button class="submit-button submit-feedback">Send Feedback</button>
             </div>
@@ -109,6 +109,11 @@
           <h2>Match has ended</h2>
         </div>
       </div>
+    </div>
+    <div class="match-odds-select-container">
+      <button class="match-odd" id="match-odd-1">1.32</button>
+      <button class="match-odd" id="match-odd-2">1.42</button>
+      <button class="match-odd" id="match-odd-3">1.52</button>
     </div>
   </section>
   <section class="section-4">
@@ -179,7 +184,7 @@
     <div class="odds-container-outter">
       <div class="odds-container">
         <h2>Odds:</h2>
-        <h2>( 1 x 2 )</h2>
+        <h2><span id="match-detail-odd-1">1:(1.113)</span><span id="match-detail-odd-2">x:(2.22)</span><span id="match-detail-odd-3">2:(0.18)</span></h2>
       </div>
     </div>
     <div class="bet-button-container">
@@ -361,6 +366,11 @@
       <br>8. To find out more about cookies, including how to see what cookies have been set and how to manage and delete them, visit wikipedia.org, www.allaboutcookies.org, or www.aboutcookies.org.
       </span>
       <button class="gdpr-button-close">CLOSE</button>
+    </div>
+  </div>
+  <div class="feedback-popup">
+    <div class="feedback-inner">
+      <span>Your feedback has been sent!</span>
     </div>
   </div>
 </div>
